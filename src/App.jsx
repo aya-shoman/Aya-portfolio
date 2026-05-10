@@ -81,6 +81,44 @@ const experiences = [
       ]
     }
   ]
+  const projects = [
+    {
+      title: 'Electronic Tech-Store (CRUD)',
+      subtitle: 'Inventory Management System',
+      description: 'Built a dynamic product management dashboard for an electronics store. Implemented full CRUD operations with persistent data handling.',
+      technologies: ['React.js', 'Bootstrap 5', 'SweetAlert2', 'Local Storage', 'JavaScript'],
+      github: 'https://github.com/aya-shoman/Crud_Website',
+      live: 'https://crud-website-rho.vercel.app/',
+      highlights: ['Full CRUD Operations', 'Responsive Dashboard', 'Real-time Search & Filtering']
+    },
+    {
+      title: 'Fokir - Creative Portfolio',
+      subtitle: 'Modern UI/UX Showcase',
+      description: 'A pixel-perfect, fully responsive personal portfolio template designed with a focus on modern aesthetics.',
+      technologies: ['HTML5', 'CSS3', 'Google Fonts', 'FontAwesome'],
+      github: 'https://github.com/aya-shoman/fokir_website', 
+      live: 'https://fokir-website-five.vercel.app/',
+      highlights: ['Fully Responsive Design', 'Custom Iconography', 'Professional Typography']
+    },
+    {
+      title: 'Yummy - Global Recipe Finder',
+      subtitle: 'API-Driven Content Platform',
+      description: 'A dynamic web application that fetches and displays real-time culinary data from a RESTful API.',
+      technologies: ['REST API (MealDB)', 'JavaScript', 'CSS', 'Fetch API'],
+      github: 'https://github.com/aya-shoman/food_api_website',
+      live: 'https://food-api-website-five.vercel.app/',
+      highlights: ['Asynchronous Data Fetching', 'Real-time Search', 'API Integration']
+    },
+    {
+      title: 'Daniel - Personal Portfolio',
+      subtitle: 'Clean & Minimalist Portfolio',
+      description: 'A professional, single-page portfolio designed for high-impact visual storytelling.',
+      technologies: ['HTML5', 'CSS3', 'Bootstrap 5', 'JavaScript'],
+      github: 'https://github.com/aya-shoman/daniel-website',
+      live: 'https://daniel-website-zeta.vercel.app/',
+      highlights: ['Single Page Architecture', 'Smooth Scrolling UI', 'Filterable Project Gallery']
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300 relative overflow-x-hidden">
@@ -518,7 +556,7 @@ const experiences = [
                     </div>
                     <div>
                       <p className="font-semibold text-lg">Email</p>
-                      <p className="text-muted-foreground">contact.aya@gmail.com</p>
+                      <p className="text-muted-foreground">contact.ayaabdelhamid567@gmail.com</p>
                     </div>
                   </a>
 
