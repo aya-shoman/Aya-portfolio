@@ -53,39 +53,12 @@ function App() {
   }
 
 const skills = {
-  languages: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
+  languages: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3','C++','Python'],
   frameworks: ['React.js', 'Next.js', 'Redux Toolkit', 'Context API'],
-  frontend: ['Tailwind CSS', 'Bootstrap 5', 'SASS', 'Framer Motion'],
-  tools: ['Git & GitHub', 'Vite', 'pnpm / npm', 'Firebase', 'Figma'],
+  frontend: ['Tailwind CSS', 'Bootstrap 5', 'SASS'],
+  tools: ['Git & GitHub', 'Vite', 'pnpm / npm', 'Figma'],
   architecture: ['Responsive Design', 'Component-Based Architecture', 'State Management', 'Performance Optimization']
 }
-
-  const projects = [
-    {
-  title: 'Electronic Tech-Store (CRUD)',
-  subtitle: 'Inventory Management System',
-  description: 'Built a dynamic product management dashboard for an electronics store. Implemented full CRUD operations with persistent data handling. Focused on high-quality UX with real-time search, category filtering, and responsive product cards. Ensured robust form validation for adding and editing tech specs.',
-  technologies: ['React.js', 'Bootstrap 5', 'SweetAlert2', 'Local Storage', 'JavaScript'],
-  github: 'https://aya-shoman.github.io/Crud_Website/', 
-  highlights: ['Full CRUD Operations', 'Responsive Dashboard', 'Real-time Search & Filtering']
-    },
-  {
-  title: 'Fokir - Creative Portfolio',
-  subtitle: 'Modern UI/UX Showcase',
-  description: 'A pixel-perfect, fully responsive personal portfolio template designed with a focus on modern aesthetics. I implemented a clean typography system using Google Fonts and integrated professional iconography. The project is built with a mobile-first approach, ensuring seamless navigation and layout consistency across all screen sizes and devices.',
-  technologies: ['HTML5', 'CSS3', 'Bootstrap 5', 'Google Fonts', 'FontAwesome', 'Media Queries'],
-  github: 'https://aya-shoman.github.io/fokir_website/', 
-  highlights: ['Fully Responsive Design', 'Custom Iconography', 'Professional Typography']
-},
- {
-  title: 'Yummy - Global Recipe Finder',
-  subtitle: 'API-Driven Content Platform',
-  description: 'A dynamic web application that fetches and displays real-time culinary data from a RESTful API. I implemented asynchronous data fetching, complex category filtering, and a seamless search experience. The project showcases high-quality UI cards, responsive grid layouts, and interactive loading states for a smooth user journey.',
-  technologies: ['React.js', 'REST API (MealDB)', 'Axios', 'Tailwind CSS', 'Framer Motion'],
-  github: 'https://aya-shoman.github.io/food_api_website/', 
-  highlights: ['Asynchronous Data Fetching', 'Real-time Search & Filtering', 'Interactive API Integration']
-},
-  ]
 const experiences = [
     {
       title: 'Frontend Developer Trainee',
@@ -117,7 +90,6 @@ const experiences = [
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
         <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-float" style={{animationDelay: '4s'}}></div>
       </div>
-
       {/* Navigation */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-background/80 backdrop-blur-xl border-b border-border shadow-lg' : 'bg-transparent'}`}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -400,87 +372,91 @@ const experiences = [
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Selected Projects
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
-          </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
-              <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:border-primary/50 border-2 border-primary/20 flex flex-col hover:-translate-y-2 backdrop-blur-sm bg-card/50">
-                <CardHeader>
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="space-y-2 flex-1">
-                      <CardTitle className="text-2xl group-hover:text-primary transition-colors duration-300">
-                        {project.title}
-                      </CardTitle>
-                      <CardDescription className="text-base font-medium">
-                        {project.subtitle}
-                      </CardDescription>
-                    </div>
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      onClick={() => window.open(project.github, '_blank')}
-                      className="hover:scale-125 transition-all duration-300 hover:bg-primary/10 hover:text-primary"
-                    >
-                      <Github className="h-6 w-6" />
-                    </Button>
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-1 flex flex-col gap-6">
-                  <p className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
-                    {project.description}
-                  </p>
-                  
-                  <div className="space-y-3">
-                    <h4 className="font-semibold text-sm text-foreground flex items-center gap-2">
-                      <Sparkles className="w-4 h-4 text-primary" />
-                      Key Highlights
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {project.highlights.map((highlight, idx) => (
-                        <Badge key={idx} className="bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 py-1 px-3">
-                          {highlight}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
+{/* Projects Section */}
+<section id="projects" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+  <div className="container mx-auto max-w-6xl relative z-10">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        Selected Projects
+      </h2>
+      <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+    </div>
 
-                  <div className="space-y-3">
-                    <h4 className="font-semibold text-sm text-foreground flex items-center gap-2">
-                      <Code className="w-4 h-4 text-primary" />
-                      Technologies
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech, idx) => (
-                        <Badge key={idx} variant="outline" className="hover:bg-primary/10 hover:border-primary transition-all duration-300 hover:scale-110">
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      {projects.map((project, index) => (
+        <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:border-primary/50 border-2 border-primary/20 flex flex-col hover:-translate-y-2 backdrop-blur-sm bg-card/50">
+          <CardHeader>
+            <div className="flex items-start justify-between gap-4">
+              <div className="space-y-2 flex-1">
+                <CardTitle className="text-2xl group-hover:text-primary transition-colors duration-300">
+                  {project.title}
+                </CardTitle>
+                <CardDescription className="text-base font-medium">
+                  {project.subtitle}
+                </CardDescription>
+              </div>
+              
+              {/* أيقونة الجيت هاب للكود - فوق على اليمين */}
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => window.open(project.github, '_blank')}
+                className="hover:scale-125 transition-all duration-300 hover:bg-primary/10 hover:text-primary border border-transparent hover:border-primary/20"
+                title="View Code"
+              >
+                <Github className="h-6 w-6" />
+              </Button>
+            </div>
+          </CardHeader>
 
-                  <Button
-                    variant="outline"
-                    className="w-full group/btn mt-auto border-2 border-primary/50 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105 py-6"
-                    onClick={() => window.open(project.github, '_blank')}
-                  >
-                    <Github className="mr-2 h-5 w-5" />
-                    View on GitHub
-                    <ExternalLink className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+          <CardContent className="flex-1 flex flex-col gap-6">
+            <p className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
+              {project.description}
+            </p>
+
+            <div className="space-y-3">
+              <h4 className="font-semibold text-sm text-foreground flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-primary" />
+                Key Highlights
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {project.highlights.map((highlight, idx) => (
+                  <Badge key={idx} className="bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 py-1 px-3">
+                    {highlight}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <h4 className="font-semibold text-sm text-foreground flex items-center gap-2">
+                <Code className="w-4 h-4 text-primary" />
+                Technologies
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((tech, idx) => (
+                  <Badge key={idx} variant="outline" className="hover:bg-primary/10 hover:border-primary transition-all duration-300 hover:scale-110">
+                    {tech}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            {/* الزرار الكبير للـ Live Demo - تحت خالص */}
+            <Button
+              className="w-full group/btn mt-auto bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 py-6 shadow-lg hover:shadow-primary/20"
+              onClick={() => window.open(project.live || project.github, '_blank')}
+            >
+              <ExternalLink className="mr-2 h-5 w-5" />
+              Live Demo
+              <ChevronRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
+            </Button>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Education Section */}
       <section id="education" className="relative py-20 px-4 sm:px-6 lg:px-8">
@@ -634,6 +610,5 @@ const experiences = [
     </div>
   )
 }
-
 export default App
 
