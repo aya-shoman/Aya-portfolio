@@ -86,7 +86,7 @@ const experiences = [
       title: 'Electronic Tech-Store (CRUD)',
       subtitle: 'Inventory Management System',
       description: 'Built a dynamic product management dashboard for an electronics store. Implemented full CRUD operations with persistent data handling.',
-      technologies: ['React.js', 'Bootstrap 5', 'SweetAlert2', 'Local Storage', 'JavaScript'],
+      technologies: ['HTML','CSS','SweetAlert2', 'Local Storage', 'JavaScript'],
       github: 'https://github.com/aya-shoman/Crud_Website',
       live: 'https://crud-website-rho.vercel.app/',
       highlights: ['Full CRUD Operations', 'Responsive Dashboard', 'Real-time Search & Filtering']
@@ -117,6 +117,42 @@ const experiences = [
       github: 'https://github.com/aya-shoman/daniel-website',
       live: 'https://daniel-website-zeta.vercel.app/',
       highlights: ['Single Page Architecture', 'Smooth Scrolling UI', 'Filterable Project Gallery']
+    },
+    {
+      title: 'Magic Bakery',
+      subtitle: 'Premium Pastry Landing Page',
+      description: 'A high-end, visual-focused landing page for a bakery. Featuring elegant design, responsive product galleries, and modern animations.',
+      technologies: ['HTML5', 'CSS3', 'Responsive Design', 'Vercel Deployment'],
+      github: 'https://github.com/aya-shoman/bakery-page', 
+      live: 'https://bakery-page-sand.vercel.app/',
+      highlights: ['Visual Storytelling', 'Premium UI Design', 'Smooth Layout Transitions']
+    },
+    {
+      title: 'Shoe Hub',
+      subtitle: 'Modern E-commerce Interface',
+      description: 'A stylish and responsive landing page for a footwear store. Focused on clean product presentation and intuitive navigation.',
+      technologies: ['HTML5', 'CSS3', 'Responsive Design'],
+      github: 'https://github.com/aya-shoman/shoes_shop', 
+      live: 'https://shoes-shop-lac.vercel.app/',
+      highlights: ['Product Showcase', 'Modern UI/UX', 'Mobile-First Design']
+    },
+    {
+      title: 'Smart Login System',
+      subtitle: 'Secure Authentication Interface',
+      description: 'A professional login and registration system with form validation, interactive UI feedback, and secure session simulation.',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Form Validation'],
+      github: 'https://github.com/aya-shoman/login_form', 
+      live: 'https://login-form-kappa-seven.vercel.app/',
+      highlights: ['Interactive Form Validation', 'User-Friendly UX', 'Responsive Layout']
+    },
+    {
+      title: 'Professional Profile Showcase',
+      subtitle: 'Personal Brand Identity',
+      description: 'A customized professional portfolio designed to showcase individual achievements, skills, and work history with a clean, high-conversion layout.',
+      technologies: ['react.js','HTML5', 'CSS3', 'Bootstrap 5', 'Responsive Design'],
+      github: 'https://github.com/aya-shoman/Ahmed_Portfolio', 
+      live: 'https://ahmed-portfolio-ten-chi.vercel.app/',
+      highlights: ['Personal Branding', 'Custom Layout Design', 'Optimized UX']
     }
   ];
 
