@@ -650,7 +650,7 @@ const experiences = [
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-muted-foreground text-sm">
-              © 2025 Aya Shoman. All rights reserved.
+              © 2026 Aya Shoman. All rights reserved.
             </p>
             <div className="flex items-center gap-4">
               <Button
